@@ -153,3 +153,34 @@ button {
     font-size: 13px;
     letter-spacing: 1px;
 }
+
+.not-found{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #f1f1f1;
+}
+
+.button-box{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 4rem auto 1rem auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.button-box button{
+    color: #fff;
+    background-color: #222;
+    padding: 8px 20px;
+    border-radius: 19px;
+    border: 1px solid silver;
+}
+
+.highlight{
+    color: rgb(241, 89, 34) !important;
+    border-color: orangered !important;
+}
