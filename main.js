@@ -182,6 +182,7 @@ function setFilterButton() {
         }
 
         displayFilterData(url + '&with_genres=' + encodeURI(selectGenre.join(',')))
+        highlight();
     }
 }
 setFilterButton();
@@ -221,5 +222,14 @@ function displayResult(data) {
 
 
 function highlight() {
-
+    const buttons = document.querySelectorAll('.gbtn')
+    buttons.forEach((btn) => {
+        btn.classList.remove('highlight')
+    })
+    if (selectGenre.length != 0) {
+        selectGenre.forEach((el) => {
+            const active = document.getElementById(el)
+            active.classList.add('highlight')
+        })
+    }
 }
